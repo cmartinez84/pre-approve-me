@@ -1,0 +1,117 @@
+
+.hawaii{
+  height: 100vh;
+  padding: 28px;
+}
+.state-seal{
+  width: 57px
+}
+.form-step{
+  background: #E9F1F7;
+  border-radius: 12px;
+  height: 500px;
+  padding: 50px;
+  border: 1px solid #01805c;
+}
+.hawaii-right-col-top{
+  height: 350px;
+}
+.hawaii-right-col-bottom{
+  display: inline-block;
+}
+.hawaii-step-nav{
+  text-align: right;
+}
+
+
+/*step1*/
+.type-option-outer{
+  display: inline-block;
+  padding: 10px
+}
+.type-option{
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  background: #21D19F;
+  box-shadow: 1px 1px 1px 1px #45B69C;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.type-option:hover{
+  background: #01805c;
+}
+.type-option-selected{
+  background: #01805c;
+}
+.type-option-icon{
+  font-size: 3em;
+}
+.step1{
+  text-align: center;
+}
+
+/*step2*/
+.select-islands{
+  column-count: 4;
+}
+.select-islands label{
+  display: block;
+}
+
+
+/*step3*/
+.step3-message-box{
+  position: relative;
+}
+.step3-message{
+  width: 450px;
+  height: 180px;
+}
+.message-sheild{
+  width: 450px;
+  height: 180px;
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*tracker*/
+
+.current-form-step{
+  color: #21D19F;
+}
+.tracker div{
+  cursor: pointer;
+}
+.tracker-alert-icon{
+  font-size: 5em;
+}
+.tracker-warning-icon{
+  background: red;
+  text-align: center;
+}
+
+
+/*step4*/
+.step4-modal{
+  padding: 45px
+}
+.electronic-signature{
+  border: none;
+  border-bottom: 1px solid black;
+}
+.step4-message{
+  background: lightgrey;
+  padding: 11px;
+  border: 1px solid black;
+}
+.alert-header{
+  font-weight: bold
+}
+.hawaii-step4-change{
+  color: blue;
+  cursor: pointer;
+}
