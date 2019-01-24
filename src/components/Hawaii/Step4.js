@@ -68,7 +68,7 @@ class step4 extends Component{
              onClick={()=>this.props.handleChangeStep(0)}>
              [change]
            </span>
-           <span>{` to be sent containing the following message to the Hawaiin citizens of the following islands:  ${this.props.islands.join(" ")}`}</span>
+           <span>to be sent containing the following message to the Hawaiin citizens of the following islands:</span> <span className="step4-islands">  {this.props.islands.join(" ")}</span>
              <span
                className="hawaii-step4-change"
                onClick={()=>this.props.handleChangeStep(1)}>

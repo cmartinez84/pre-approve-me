@@ -11,21 +11,15 @@ import Tracker from './Tracker';
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBell } from '@fortawesome/free-solid-svg-icons'
-// import { faStickyNote } from '@fortawesome/free-solid-svg-icons'
-// import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 import seal from './seal.png';
 
 import './hawaii.css';
 
-// library.add(faBell)
-// library.add(faStickyNote)
-// library.add(faExclamationTriangle)
 
 class Hawaii extends Component {
   state={
-    selectedAlertType: null,
+    selectedAlertType: "Please select a Type",
     currentStepIndex: 0,
     alertType: null,
     alertText:[],
@@ -92,14 +86,14 @@ class Hawaii extends Component {
         <h1><img className="state-seal" src={seal}></img> HAWAII MISSILE DEFENSE ALERT SYSTEM</h1>
 
         <div className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-3 hawaii-col">
             <Tracker
               selectedAlertType={this.state.selectedAlertType}
               handleChangeStep={this.handleChangeStep}
               currentStepIndex={this.state.currentStepIndex}>
             </Tracker>
           </div>
-          <div className="col-sm-8 form-step">
+          <div className="col-sm-8 form-step hawaii-col ">
             <div className="hawaii-right-col-top">
               {steps[this.state.currentStepIndex]}
             </div>
